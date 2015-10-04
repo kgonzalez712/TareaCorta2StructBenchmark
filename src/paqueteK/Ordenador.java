@@ -2,7 +2,7 @@ package paqueteK;
 
 public class Ordenador {
 	
-//INSERTIONSORT.	
+//INSERTIONSORT	
 	public Object[] insertionSort(Object[] array){
 		for(int i=1; i<array.length;i++){
 			int key = Integer.parseInt(array[i].toString());
