@@ -9,18 +9,24 @@ public class pruebaCon10Entradas{
 	 Random rnd = new Random();
 	 Object[]data = new Object[10];
 	 int c=0;
+	 String array="[";
 	 while(c<data.length){
 		data[c] = (int) (rnd.nextDouble()*100+0);
 		c++;
 	 }
 	 System.out.println("Arreglo original");
 	 for(int i=0; i<data.length;i++){
-		 System.out.println(data[i]);
+		 array+=data[i] + ", ";
 	 }
-     System.out.println("==========");
+	 array+= data[data.length-1] + "]";
+	 System.out.println(array);
      System.out.println("Arreglo ordenado");
 	 Ordenador o = new Ordenador();
+	 long tiempo1=System.nanoTime();
 	 o.insertionSort(data);
+	 long tiempo2=System.nanoTime();
+	 long tiempoT=tiempo2-tiempo1;
 	 o.printArray(data);
+	 System.out.println(tiempoT/1E9);
  }
 }

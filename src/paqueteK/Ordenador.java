@@ -17,9 +17,12 @@ public class Ordenador {
 	}
 	
 	public void printArray(Object[] array){
+		String arreglo="[";
 		 for(int i=0; i<array.length;i++){
-			 System.out.println(array[i]);
+			 arreglo+=array[i] + ", ";
 		 }
+		 arreglo+= array[array.length-1] + "]";
+		 System.out.println(arreglo);
 	}
 	
 	
