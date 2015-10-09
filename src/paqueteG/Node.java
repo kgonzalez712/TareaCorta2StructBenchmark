@@ -1,5 +1,11 @@
 package paqueteG;
 
+/**
+ * Clase para crear nodo
+ * 
+ * @author Gustavo Alonso Fallas Carrera
+ *
+ */
 public class Node {
 	int data;
 	Node left;
