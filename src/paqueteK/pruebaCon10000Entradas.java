@@ -7,6 +7,7 @@ import java.util.Random;
 public class pruebaCon10000Entradas{
  public static void main(String arg[ ]) {
 	 Random rnd = new Random();
+	 BinarySearch b = new BinarySearch();
 	 Object[]data = new Object[10000];
 	 String array="[";
 	 int c=0;
@@ -27,9 +28,16 @@ public class pruebaCon10000Entradas{
 	 long tiempo1=System.nanoTime();
 	 o.insertionSort(data);
 	 long tiempo2=System.nanoTime();
-	 long tiempoT=tiempo2-tiempo1;
+	 long tiempoT1=tiempo2-tiempo1;
 	 o.printArray(data);
-	 System.out.println(tiempoT/1E9);
+	 System.out.println("El tiempo que tarda en ordenar el arreglo es de" + tiempoT1/1E9 + "s");
+	 long tiempo3=System.nanoTime();
+	 Object[]a=o.insertionSort(data);
+	 b.binarySearch(5300,a,10000);
+	 long tiempo4=System.nanoTime();
+	 long tiempoT2=tiempo4-tiempo3;
+	 System.out.println("El tiempo que tarda en encontrar el elemento en el arreglo es de" + tiempoT2/1E9 + "s");
+
 
  }
 }
