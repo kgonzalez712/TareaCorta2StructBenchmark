@@ -8,6 +8,9 @@ public class SplayTree extends BST {
     public SplayTree() {
         super();
     }
+    /*
+     * formacion del arbol
+     */
     private void continueRotation(BSTNode gr, BSTNode par,BSTNode ch, BSTNode desc) {
         if (gr != null) { // if par has a grandparent;
             if (gr.right == ((SplayTreeNode)ch).parent)
@@ -20,11 +23,17 @@ public class SplayTree extends BST {
             ((SplayTreeNode)par).parent = ch;
             ((SplayTreeNode)ch).parent = gr;
         }
+    	/*
+    	 * funcion que hace rotacion hacia la derecha
+    	 */
         private void rotateR(SplayTreeNode p) {
             p.parent.left = p.right;
             p.right = p.parent;
             continueRotation(((SplayTreeNode)p.parent).parent,p.right,p,p.right.left);
         }
+        /*
+         * funcion que hace rotacion hacia la izquierda
+         */
         private void rotateL(SplayTreeNode p) {
             p.parent.right = p.left;
             p.left = p.parent;

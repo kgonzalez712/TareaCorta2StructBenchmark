@@ -32,6 +32,11 @@ public class mergeSort {
 			}
 	                
 		}
+	        
+	        /*
+	         * funcion que genera el array con los numeros sin ordenar
+	         */
+	        
 		public static int[] MergeSort(int [] A)
 		{
 			if(A.length==1)
@@ -55,6 +60,11 @@ public class mergeSort {
 				return A;
 			}
 		}
+		
+		/*
+		 * esta funcion sirve para ir comparando los elementos de  la litas y de una vez los va uniendo
+		 * formando la lista ordenada
+		 */
 		public static int [] Merge(int [] A,int [] B)
 		{
 			int C []=new int [A.length+B.length];

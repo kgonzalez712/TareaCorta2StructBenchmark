@@ -5,6 +5,9 @@ public class SplayTreeNode extends BSTNode {
     public SplayTreeNode() {
         left = right = parent = null;
     }
+    /*
+     * funcion que genera los nodos del arbol
+     */
     public SplayTreeNode(Comparable el) {
         this(el,null,null,null);
     }

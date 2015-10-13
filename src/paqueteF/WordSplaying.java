@@ -24,8 +24,11 @@ import java.io.*;
             return word + ": " + freq + " ";
         }
         }
+     	/*
+     	 * funcion que contiene los elementos en el la misma fila
+     	 */
         class WordSplay extends SplayTree {
-            private int differentWords,wordCnt; // counter of all words in the same file;
+            private int differentWords,wordCnt; 
             public WordSplay() {
                 differentWords = wordCnt = 0;
             }

@@ -1,6 +1,18 @@
 package paqueteF;
 
+/**
+ * 
+ * @author Fernanda
+ *
+ */
+
 public class linearSearch {
+	
+	/**
+	 * Funciona que busca en una arreglo el numero que le indicamos
+	 * @param vector:array con la lista de numeros aleatorio
+	 * @param Elem: int numeros que queremos que encuentre
+	 */
 	
 	public void busquedaSecuencial(int vector[], int Elem){ 
         for (int i = 0; i < vector.length; i++){
@@ -9,6 +21,7 @@ public class linearSearch {
             }
             else{
             System.out.println(-1);
-
-} 
-}}}
+            } 
+        	}
+        }
+	}
