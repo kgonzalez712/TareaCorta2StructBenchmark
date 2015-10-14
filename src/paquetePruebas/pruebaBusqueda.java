@@ -1,5 +1,5 @@
-package paqueteF;
-
+package paquetePruebas;
+import paqueteBusqueda.*;
 import java.util.Arrays;
 
 public class pruebaBusqueda {

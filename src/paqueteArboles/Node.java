@@ -1,4 +1,4 @@
-package paqueteG;
+package paqueteArboles;
 
 /**
  * Clase para crear nodo

@@ -1,4 +1,5 @@
-package paqueteF;
+package paquetePruebas;
+import paqueteArboles.*;
 
 public class pruebaArbol {
 

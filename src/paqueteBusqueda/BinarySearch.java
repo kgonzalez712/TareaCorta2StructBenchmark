@@ -1,4 +1,4 @@
-package paqueteK;
+package paqueteBusqueda;
 
 
 public class BinarySearch {

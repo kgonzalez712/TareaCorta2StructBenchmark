@@ -1,6 +1,5 @@
-package paqueteK;
-
-
+package paquetePruebas;
+import paqueteArboles.*;
 
 
 public class PruebaAVL {

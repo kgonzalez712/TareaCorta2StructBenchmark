@@ -1,7 +1,7 @@
-package paqueteK;
-
+package paquetePruebas;
+import paqueteOrdenador.*;
 import java.util.Random;
-
+import paqueteBusqueda.*;
 
 
 public class pruebaCon100Entradas{

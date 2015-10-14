@@ -1,4 +1,4 @@
-package paqueteF;
+package paqueteOrdenador;
 
 import java.util.Scanner;
 

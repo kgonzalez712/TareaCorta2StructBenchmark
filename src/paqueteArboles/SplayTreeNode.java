@@ -1,4 +1,4 @@
-package paqueteF;
+package paqueteArboles;
 
 public class SplayTreeNode extends BSTNode {
     protected BSTNode parent;

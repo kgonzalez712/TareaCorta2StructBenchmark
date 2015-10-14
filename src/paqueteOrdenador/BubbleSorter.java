@@ -1,4 +1,4 @@
-package paqueteCh;
+package paqueteOrdenador;
 
 public class BubbleSorter {
 	public static void BubbleSort( Object [ ] num ){

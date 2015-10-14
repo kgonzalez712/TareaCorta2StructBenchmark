@@ -1,4 +1,4 @@
-package paqueteF;
+package paqueteArboles;
 
 public class BSTNode {
 	

@@ -1,4 +1,4 @@
-package paqueteG;
+package paqueteOrdenador;
 
 public class HeapSort {
 

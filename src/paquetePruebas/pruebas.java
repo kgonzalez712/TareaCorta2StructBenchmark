@@ -1,5 +1,6 @@
-package paqueteG;
-
+package paquetePruebas;
+import paqueteOrdenador.*;
+import paqueteArboles.*;
 
 import java.util.Random;
 

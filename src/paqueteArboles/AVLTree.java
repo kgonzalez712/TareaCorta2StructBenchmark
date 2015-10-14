@@ -1,6 +1,6 @@
-package paqueteK;
+package paqueteArboles;
 
-class AVLTree
+public class AVLTree
 {
     private AVLNode root;     
 

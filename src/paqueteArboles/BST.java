@@ -1,4 +1,4 @@
-package paqueteF;
+package paqueteArboles;
 
 public class BST {
     protected BSTNode root = null;

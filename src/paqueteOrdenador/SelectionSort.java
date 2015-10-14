@@ -1,4 +1,4 @@
-package paqueteG;
+package paqueteOrdenador;
 
 import java.util.Arrays;
 

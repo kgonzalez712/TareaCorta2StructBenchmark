@@ -1,8 +1,4 @@
-package paqueteF;
-
-import paqueteF.BST;
-import paqueteF.BSTNode;
-import paqueteF.SplayTreeNode;
+package paqueteArboles;
 
 public class SplayTree extends BST {
     public SplayTree() {
