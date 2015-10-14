@@ -18,4 +18,24 @@ public class CircularLinkedList {
 		}
 	}
 	
+	public int buscar(int ele){
+		if (this.head==null){
+			System.out.println("Error: la lista esta vacia");
+			return 0;
+		}
+		else {
+			int resul = 0;
+			Nodo temp=this.head;
+			while(!temp.sig.equals(this.head)){
+				if (temp.ele==ele){
+					resul=temp.ele;
+					break;
+				}
+				else{
+					temp=temp.sig;
+				}
+			}
+			return resul;
+		}
+	}
 }
