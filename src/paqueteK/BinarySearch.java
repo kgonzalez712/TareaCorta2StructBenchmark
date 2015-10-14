@@ -2,7 +2,13 @@ package paqueteK;
 
 
 public class BinarySearch {
-
+		/**
+		 * Realiza una busqueda binaria sobre el arreglo con el elemento ingresado
+		 * @param key
+		 * @param data
+		 * @param size
+		 * @return true si el elemento se encuentra y false si no
+		 */
 	    public boolean binarySearch(int key,Object[] data,int size) 
 	    {
 	         int low = 0;

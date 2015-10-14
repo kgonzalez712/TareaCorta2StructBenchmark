@@ -1,8 +1,16 @@
 package paqueteK;
-
-public class Ordenador {
+/**
+ * 
+ * @author Kevin
+ *
+ */
+public class InsertionSort {
 	
-//INSERTIONSORT	
+	/**
+	 * Recibe un arreglo y lo ordena utilizando el insertion sort
+	 * @param array
+	 * @return retorna el arreglo ordenado
+	 */
 	public Object[] insertionSort(Object[] array){
 		for(int i=1; i<array.length;i++){
 			int key = Integer.parseInt(array[i].toString());
@@ -15,7 +23,10 @@ public class Ordenador {
 		}
 		return array;
 	}
-	
+	/**
+	 * Recibe un arreglo y lo imprime en consola
+	 * @param array
+	 */
 	public void printArray(Object[] array){
 		String arreglo="[";
 		 for(int i=0; i<array.length;i++){

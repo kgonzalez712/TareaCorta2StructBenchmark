@@ -1,11 +1,23 @@
 package paqueteK;
 
+/**
+ * 
+ * @author Kevin
+ *
+ */
 public class AVLNode {
+	/**
+	 * Atributos de la clase AVLNode
+	 */
 	Object element;
 	AVLNode left;
 	AVLNode right;
 	int height;
 	
+	/**
+	 * Constructor de la clase
+	 * @param element
+	 */
 	public AVLNode(Object element){
 		this(element,null,null);
 	}

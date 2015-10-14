@@ -24,7 +24,7 @@ public class pruebaCon10000Entradas{
 	 System.out.println(array);
 	 
      System.out.println("Arreglo ordenado");
-	 Ordenador o = new Ordenador();
+     InsertionSort o = new InsertionSort();
 	 long tiempo1=System.nanoTime();
 	 o.insertionSort(data);
 	 long tiempo2=System.nanoTime();

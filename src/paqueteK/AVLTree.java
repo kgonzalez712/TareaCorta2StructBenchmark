@@ -4,37 +4,61 @@ class AVLTree
 {
     private AVLNode root;     
 
-    /* Constructor */
+    /**
+     * Constructor de la clase AVLTree
+     */
     public AVLTree()
     {
         root = null;
     }
-    /* Function to check if tree is empty */
+    /**
+     * VErifica si el arbol se encuentra vacio
+     * @return true si esta vacio, false si no lo esta
+     */
     public boolean isEmpty()
     {
         return root == null;
     }
-    /* Make the tree logically empty */
+    /**
+     * hace al árbol lógicamente vacío, haciendo una referencia nula a la raíz
+     */
     public void makeEmpty()
     {
         root = null;
     }
-    /* Function to insert data */
+    /**
+     * Recibe un elemento y lo inserta en el arbol
+     * @param data
+     */
     public void insert(int data)
     {
         root = insert(data, root);
     }
-    /* Function to get height of node */
+    /**
+     * Retrona la altura del arbol
+     * @param t
+     * @return la altura
+     */
     private int height(AVLNode t )
     {
         return t == null ? -1 : t.height;
     }
-    /* Function to max of left/right node */
+    /**
+     * Retorna el maximo del hijo derecho o del izquierdo
+     * @param lhs
+     * @param rhs
+     * @return Retorna el maximo del hijo derecho o del izquierdo
+     */
     private int max(int lhs, int rhs)
     {
         return lhs > rhs ? lhs : rhs;
     }
-    /* Function to insert data recursively */
+    /**
+     * Inserta los datos de manera recursiva
+     * @param x
+     * @param t
+     * @return el nodo insertado
+     */
     private AVLNode insert(int x, AVLNode t)
     {
         if (t == null)
@@ -58,11 +82,15 @@ class AVLTree
                     t = doubleWithRightChild( t );
         }
         else
-          ;  // Duplicate; do nothing
+          ;
         t.height = max( height( t.left ), height( t.right ) ) + 1;
         return t;
     }
-    /* Rotate binary tree node with left child */     
+    /**
+     * realiza la rotacion para mantener el balance del arbol AVL con el hijo izquierdo     
+     * @param k2
+     * @return el arbol balanceado
+     */
     private AVLNode rotateWithLeftChild(AVLNode k2)
     {
         AVLNode k1 = k2.left;
@@ -73,7 +101,11 @@ class AVLTree
         return k1;
     }
 
-    /* Rotate binary tree node with right child */
+    /**
+     * realiza la rotacion para mantener el balance del arbol AVL con el hijo derecho
+     * @param k1
+     * @return el arbol balanceado
+     */
     private AVLNode rotateWithRightChild(AVLNode k1)
     {
         AVLNode k2 = k1.right;
@@ -84,22 +116,27 @@ class AVLTree
         return k2;
     }
     /**
-     * Double rotate binary tree node: first left child
-     * with its right child; then node k3 with new left child */
+     * realiza un doble rotacion, primero el hijo izquierdo con el hijo derecho y luego el nodo que se recibe con el hijo izquierdo.
+     *  
+     */
     private AVLNode doubleWithLeftChild(AVLNode k3)
     {
         k3.left = rotateWithRightChild( k3.left );
         return rotateWithLeftChild( k3 );
     }
     /**
-     * Double rotate binary tree node: first right child
-     * with its left child; then node k1 with new right child */      
+    *
+    *realiza un doble rotacion, primero el hijo izquierdo con el hijo derecho y luego el nodo que se recibe con el hijo derecho.
+    */      
     private AVLNode doubleWithRightChild(AVLNode k1)
     {
         k1.right = rotateWithLeftChild( k1.right );
         return rotateWithRightChild( k1 );
     }    
-    /* Functions to count number of nodes */
+    /**
+     * Cuenta la cantidad de nodos en el arbol
+     * @return la cantidad de nodos presentes en el arbol
+     */
     public int countNodes()
     {
         return countNodes(root);
@@ -116,7 +153,11 @@ class AVLTree
             return l;
         }
     }
-    /* Functions to search for an element */
+    /**
+     * Realiza la busqueda del elemento ingresado
+     * @param val
+     * @return true si el elemento se encuentra y false si no
+     */
     public boolean search(int val)
     {
         return search(root, val);
@@ -140,7 +181,9 @@ class AVLTree
         }
         return found;
     }
-    /* Function for inorder traversal */
+    /**
+     * Imprime el arbol en orden
+     */
     public void inorder()
     {
         inorder(root);
@@ -154,7 +197,9 @@ class AVLTree
             inorder(r.right);
         }
     }
-    /* Function for preorder traversal */
+    /**
+     * Imprime el arbol en preorden
+     */
     public void preorder()
     {
         preorder(root);
@@ -168,7 +213,9 @@ class AVLTree
             preorder(r.right);
         }
     }
-    /* Function for postorder traversal */
+    /**
+     * Imprime el arbol en un post orden 
+     */
     public void postorder()
     {
         postorder(root);
